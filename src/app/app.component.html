@@ -1,29 +1,13 @@
 <h1>App Components</h1>
-<br/>
 
-<br/>
-<h1 *ngIf="show then ifBlock else elseBlock"></h1>
-
-
-<ng-template #ifBlock>
-    <h1>React with Code Step by step</h1>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
 </ng-template>
 
-
-<ng-template #elseBlock>
-    <h1>Angular with Code Step by step</h1>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Color</h1>
 </ng-template>
 
-<!-- ----------------------------------------- -->
-
-<h1 *ngIf="new_show==='yes' then ifBlock else elseBlock"></h1>
-
-
-<ng-template #ifBlock>
-    <h1>React with Code Step by step</h1>
-</ng-template>
-
-
-<ng-template #elseBlock>
-    <h1>Angular with Code Step by step</h1>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Blue Color</h1>
 </ng-template>
