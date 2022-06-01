@@ -2,8 +2,28 @@
 <br/>
 
 <br/>
+<h1 *ngIf="show then ifBlock else elseBlock"></h1>
 
-<input type="text" name="user-name" value={{name}}  disabled={{disable}} />
-<input type="text" name="user-name" [value]=name [disabled]=disable>
 
-<!-- <button (click)="">Set True</button> -->
+<ng-template #ifBlock>
+    <h1>React with Code Step by step</h1>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <h1>Angular with Code Step by step</h1>
+</ng-template>
+
+<!-- ----------------------------------------- -->
+
+<h1 *ngIf="new_show==='yes' then ifBlock else elseBlock"></h1>
+
+
+<ng-template #ifBlock>
+    <h1>React with Code Step by step</h1>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <h1>Angular with Code Step by step</h1>
+</ng-template>

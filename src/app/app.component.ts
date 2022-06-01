@@ -8,11 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'blog'; // Application Name 
+  show=false; 
+  new_show="yes"; 
 
-  name="Azhar Sayyed"
-  disable=false
-
-  // getTrue(){
-
-  // }
 }
