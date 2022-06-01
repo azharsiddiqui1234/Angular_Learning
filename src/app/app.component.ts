@@ -9,8 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'blog'; // Application Name 
 
-  count=0;
-  counter(type:string){
-    type==='add' ? this.count++:this.count--
-  }
+  name="Azhar Sayyed"
+  disable=false
+
+  // getTrue(){
+
+  // }
 }

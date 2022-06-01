@@ -1,7 +1,9 @@
 <h1>App Components</h1>
 <br/>
 
+<br/>
 
-<button (click)="counter('sub')">--</button>
-<h2>Counter:{{count}}</h2>
-<button (click)="counter('add')">+</button>
+<input type="text" name="user-name" value={{name}}  disabled={{disable}} />
+<input type="text" name="user-name" [value]=name [disabled]=disable>
+
+<!-- <button (click)="">Set True</button> -->
