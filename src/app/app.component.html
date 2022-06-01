@@ -1,6 +1,7 @@
 <h1>App Components</h1>
 <br/>
-<input type="text" #box placeholder="Name"name="name"/>
-<p>{{[displayVal]}}</p>
 
-<button (click)="getData(box.value)">getdata</button>
+
+<button (click)="counter('sub')">--</button>
+<h2>Counter:{{count}}</h2>
+<button (click)="counter('add')">+</button>

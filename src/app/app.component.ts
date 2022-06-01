@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'blog'; // Application Name 
-  displayVal:any='';
-  getData(value:any){
-    console.log(value);
-    this.displayVal=value
+
+  count=0;
+  counter(type:string){
+    type==='add' ? this.count++:this.count--
   }
 }
