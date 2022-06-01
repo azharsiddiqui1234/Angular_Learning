@@ -1,7 +1,6 @@
 <h1>App Components</h1>
-<app-sign-up></app-sign-up>
-<button (click)="getData('hello')">click</button>
 <br/>
-<br/>
+<input type="text" #box placeholder="Name"name="name"/>
+<p>{{[displayVal]}}</p>
 
-<input type="text" #box placeholder="name" (keyup)="getData(box.value)"/>
+<button (click)="getData(box.value)">getdata</button>

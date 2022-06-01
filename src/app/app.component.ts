@@ -5,9 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'blog'; // Application Name 
-  getData(val:string){
-      console.log(val);
+  displayVal:any='';
+  getData(value:any){
+    console.log(value);
+    this.displayVal=value
   }
 }
