@@ -10,9 +10,10 @@ export class AppComponent {
   title = 'blog'; // Application Name 
 
   name="Azhar Sayyed"
-  disable=false
+  disable=true
 
-  // getTrue(){
-
-  // }
+  getTrue(){
+    this.disable=false
+    // alert("hello")
+  }
 }
