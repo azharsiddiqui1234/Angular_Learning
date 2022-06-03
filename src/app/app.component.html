@@ -1,13 +1,5 @@
 <h1>App Components</h1>
 
-*ngFor="let user of user"
+<h1  [style.color]="color" [style.backgroundColor]="bgColor">Hello Azhar</h1>
 
-<table *ngFor="let user of user">
-  <h1>{{user.Name}}</h1>
-  <h1>{{user.Age}}</h1>
-  <h1>{{user.ContactNo}}</h1>
-  <table *ngFor="let Address of user.Address">
-    <li>{{Address.Perment_Address}}</li>
-    <li>{{Address.Residential_Address}}</li>
-  </table>
-</table>
+<button (click)="changeColor()">change color</button>

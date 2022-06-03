@@ -7,29 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog'; // Application Name
-  user = [
-    {
-      Name: 'Azhar Aminoddin Sayyed',
-      Age: 20,
-      ContactNo: 9088997998,
-      Address: [
-        {
-          Perment_Address: 'Fulambri Aurangabad',
-          Residential_Address: 'Pune Cmp Mg Road',
-        },
-      ],
-    },
-    {
-      Name: 'Shoaib Hasham Kahatri',
-      Age: 20,
-      ContactNo: 9458978900,
-      Address: [
-        {
-          Perment_Address: ' Gurwaarpeth ',
-          Residential_Address: 'Pune Cmp Mg Road',
-        },
-      ],
-    },
-  ];
-  
+  color = 'red';
+  bgColor = "cyan"
+
+  changeColor() {
+    let newColor = ['green', 'blue', 'red', 'yellow', 'red'];
+    let randomNumber = Math.random() * newColor.length;
+    let randomColor = newColor[Math.floor(randomNumber)];
+    this.color = randomColor;
+
+
+    
+  }
 }
