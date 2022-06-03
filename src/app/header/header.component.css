@@ -1,0 +1,28 @@
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a6f2f5d5;
+    padding: 1em 4em;
+}
+
+.logo{
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li{
+    padding-left: 4em;
+    cursor: pointer;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
