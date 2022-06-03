@@ -1,7 +1,13 @@
 <h1>App Components</h1>
 
-<div *ngFor="let user of user" >
-  <h3>Name is : {{ user.Name }}</h3>
-  <h3>Age is : {{ user.Age }}</h3>
-  <h3>Contact is : {{ user.ContactNo }}</h3>
-</div>
+*ngFor="let user of user"
+
+<table *ngFor="let user of user">
+  <h1>{{user.Name}}</h1>
+  <h1>{{user.Age}}</h1>
+  <h1>{{user.ContactNo}}</h1>
+  <table *ngFor="let Address of user.Address">
+    <li>{{Address.Perment_Address}}</li>
+    <li>{{Address.Residential_Address}}</li>
+  </table>
+</table>
