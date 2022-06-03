@@ -1,9 +1,7 @@
 <h1>App Components</h1>
 
-<div [ngSwitch]="color">
-  <h1 *ngSwitchCase="'red'" style="color: red">red Color</h1>
-  <h1 *ngSwitchCase="'yellow'" style="color: yellow">Yellow Color</h1>
-  <h1 *ngSwitchCase="'green'" style="color: green">Green Color</h1>
-  <h1 *ngSwitchDefault style="color: black;">Default Color</h1>
+<div *ngFor="let user of user" >
+  <h3>Name is : {{ user.Name }}</h3>
+  <h3>Age is : {{ user.Age }}</h3>
+  <h3>Contact is : {{ user.ContactNo }}</h3>
 </div>
-
