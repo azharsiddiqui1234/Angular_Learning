@@ -8,9 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'blog'; // Application Name
-
-  getData(data:NgForm){
-    console.log(data);
+  display =false
+  toggle(){
+    this.display=!this.display
   }
   
 }
