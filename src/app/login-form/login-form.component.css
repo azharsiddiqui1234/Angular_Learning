@@ -1,0 +1,26 @@
+.login-form{
+    text-align: center;
+    border: 1px solid #313131;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.login-form input{
+    width: 80%;
+    padding:0.5em;
+    margin: 1.5em 0;
+    border: none;
+    border-bottom: 1px solid #525151;
+    outline: none;
+}
+
+.login-form .btn{
+    margin-top: 1em;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid black;
+    box-shadow: none;
+    text-transform: capitalize;
+    border-radius: 50px solid black;
+
+}
