@@ -5,10 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent {
   title = 'angular_tut';
-  hidden = false;
-  toggleBadgeVisibility() {
-    this.hidden = !this.hidden;
+  data = 10;
+  updateData(){
+    // this.data = this.data+1;
+    this.data++
   }
+
 }
